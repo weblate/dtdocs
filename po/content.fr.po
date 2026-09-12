@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-12 02:34+0000\n"
-"PO-Revision-Date: 2026-09-12 02:35+0000\n"
+"PO-Revision-Date: 2026-09-13 02:33+0000\n"
 "Last-Translator: Jean-Pierre Verrue <contact@jpverrue.fr>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/darktable-"
 "documentation/dtdocs-github/fr/>\n"
@@ -3100,10 +3100,9 @@ msgstr "**Remarque** : à l’instar des autres transformations de vue, les mod
 
 #. type: Title #
 #: content/module-reference/processing-modules/spektrafilm.md
-#, fuzzy, no-wrap
-#| msgid "usage warning"
+#, no-wrap
 msgid "usage and FAQ"
-msgstr "Avertissement d'utilisation"
+msgstr "Mode d'emploi et FAQ"
 
 #. type: Plain text
 #: content/module-reference/processing-modules/spektrafilm.md

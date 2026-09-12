@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-12 02:34+0000\n"
-"PO-Revision-Date: 2026-09-13 02:33+0000\n"
-"Last-Translator: Jean-Pierre Verrue <contact@jpverrue.fr>\n"
+"PO-Revision-Date: 2026-09-13 02:34+0000\n"
+"Last-Translator: manu' <github@pintor.me>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/darktable-"
 "documentation/dtdocs-github/fr/>\n"
 "Language: fr\n"
@@ -32484,6 +32484,10 @@ msgid ""
 "`--print-paths`\n"
 ": Print the resolved configdir, cachedir, tmpdir, datadir, moduledir, localedir and library paths for this install, honoring any of the overrides, then exit.\n"
 msgstr ""
+"`--print-paths`\n"
+" : Imprime les chemins correspondants à configdir, cachedir, tmpdir, "
+"datadir, moduledir, localedir et library pour cette installation, en "
+"respectant les remplacements éventuels, puis quitte.\n"
 
 #. type: Plain text
 #: content/special-topics/program-invocation/darktable-cli.md
@@ -32492,6 +32496,11 @@ msgid ""
 "`--print-paths-as-flags`\n"
 ": Like `--print-paths`, but printed as a single line of --flag value pairs ready to insert into another invocation's command line (for `darktable-cli` they need to be _after_ the `--core` flag).\n"
 msgstr ""
+"`--print-paths-as-flags`\n"
+" : Comme `--print-paths`, mais imprimé sous la forme d'une seule ligne de "
+"paires de valeurs --flag prêtes à être insérées dans la ligne de commande "
+"d'une autre invocation (pour `darktable-cli`, elles doivent être _après_ "
+"l'indicateur `--core`).\n"
 
 #. type: Plain text
 #: content/special-topics/program-invocation/darktable-cli.md
@@ -33472,6 +33481,10 @@ msgid ""
 "`--print-paths-as-flags`\n"
 ": Like `--print-paths`, but printed as a single line of --flag value pairs ready to insert into another invocation's command line.\n"
 msgstr ""
+"`--print-paths-as-flags`\n"
+": Comme `--print-paths`, mais imprimé comme une seule ligne de paires de "
+"valeurs --flag prêtes à être insérées dans la ligne de commande d'une autre "
+"invocation.\n"
 
 #. type: Plain text
 #: content/special-topics/program-invocation/darktable.md
@@ -33683,25 +33696,30 @@ msgstr "darktable-mcp peut être appelé avec les paramètres optionnels suivant
 #: content/special-topics/program-invocation/darktable-mcp.md
 #, no-wrap
 msgid "darktable-mcp [--core <darktable options>]\n"
-msgstr ""
+msgstr "darktable-mcp [--core <options darktable>]\n"
 
 #. type: Plain text
 #: content/special-topics/program-invocation/darktable-mcp.md
 #, no-wrap
 msgid "  Unless you override them, two defaults are injected:\n"
 msgstr ""
+"  Sauf si vous les remplacez, deux valeurs par défaut sont injectées :\n"
 
 #. type: Bullet: '  - '
 #: content/special-topics/program-invocation/darktable-mcp.md
 #, no-wrap
 msgid "`--library :memory:`\n"
-msgstr ""
+msgstr "`--library :memory:`\n"
 
 #. type: Bullet: '    - '
 #: content/special-topics/program-invocation/darktable-mcp.md
 #, no-wrap
 msgid "the database is kept in system memory - all changes are discarded when the application terminates. Images are rendered and inspected by file path, and the library tools see nothing else.\n"
 msgstr ""
+"la base de données est conservée dans la mémoire système : toutes les "
+"modifications sont supprimées à la fin de l'application. Les images sont "
+"rendues et inspectées par chemin de fichier, et les outils de la "
+"bibliothèque ne voient rien d'autre.\n"
 
 #. type: Bullet: '  - '
 #: content/special-topics/program-invocation/darktable-mcp.md
@@ -33778,6 +33796,18 @@ msgid ""
 "  }\n"
 "}\n"
 msgstr ""
+"{\n"
+"  \"mcpServers\": {\n"
+"    \"darktable\": {\n"
+"      \"command\": \"/usr/bin/darktable-mcp\",\n"
+"      \"args\": [\"--core\",\n"
+"               \"--configdir\", \"/home/utilisateur/.config/darktable-"
+"mcp\",\n"
+"               \"--cachedir\",  \"/home/utilisateur/.config/darktable-mcp/"
+"cache\"]\n"
+"    }\n"
+"  }\n"
+"}\n"
 
 #. type: Plain text
 #: content/special-topics/program-invocation/darktable-mcp.md
@@ -40597,6 +40627,9 @@ msgid ""
 "marker shape\n"
 ": Select the shape of the slider marker from triangle, circle, diamond or bar (default triangle).\n"
 msgstr ""
+"forme du marqueur\n"
+": Sélectionnez la forme du marqueur coulissant entre triangle, cercle, "
+"losange ou barre (triangle par défaut).\n"
 
 #. type: Plain text
 #: content/preferences-settings/miscellaneous.md
@@ -41122,6 +41155,8 @@ msgstr ""
 #, no-wrap
 msgid "  Some elements of a theme are customizable by these additional preferences:\n"
 msgstr ""
+"  Certains éléments d'un thème sont personnalisables par ces préférences "
+"supplémentaires :\n"
 
 #. type: Plain text
 #: content/preferences-settings/general.md
@@ -41162,6 +41197,9 @@ msgid ""
 "  accent color\n"
 "  : When a color is selected, the on/off button of a module is tinted with the selected color (default none).\n"
 msgstr ""
+"  couleur d'accentuation\n"
+"  : Lorsqu'une couleur est sélectionnée, le bouton marche/arrêt d'un module "
+"est teinté avec la couleur sélectionnée (par défaut aucune).\n"
 
 #. type: Plain text
 #: content/preferences-settings/general.md
@@ -41714,6 +41752,11 @@ msgstr "darktable stocke ses paramètres, préréglages, styles, base de donnée
 #, no-wrap
 msgid "The location of the configuration directory (and of other darktable directories and files) can be found by running [darktable](../special-topics/program-invocation/darktable.md) (or [darktable-cli](../special-topics/program-invocation/darktable-cli.md)) with the `--print-paths` (or `--print-paths-as-flags`) option.\n"
 msgstr ""
+"L'emplacement du répertoire de configuration (et d'autres répertoires et "
+"fichiers darktable) peut être trouvé en exécutant [darktable](../special-"
+"topics/program-invocation/darktable.md) (ou [darktable-cli](../special-"
+"topics/program-invocation/darktable-cli.md)) avec l'option `-print-paths` "
+"(ou `-print-paths-as-flags`).\n"
 
 #. type: Title ##
 #: content/preferences-settings/config-directory.md
@@ -41815,7 +41858,7 @@ msgstr "`user.css` : [Modifications CSS](../preferences-settings/general/#css-t
 #: content/preferences-settings/config-directory.md
 #, no-wrap
 msgid "Cache directory"
-msgstr ""
+msgstr "Répertoire de cache"
 
 #. type: Bullet: '    + '
 #: content/preferences-settings/config-directory.md
@@ -43439,7 +43482,7 @@ msgstr ""
 #: content/preferences-settings/processing.md
 #, no-wrap
 msgid "HDR alignment"
-msgstr ""
+msgstr "Alignement HDR"
 
 #. type: Plain text
 #: content/preferences-settings/processing.md
